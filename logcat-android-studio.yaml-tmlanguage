@@ -125,7 +125,7 @@ repository:
             ([\d-]+)\s+([\d:.]+)\s+
             (\d+)\-(\d+)\/
             (.*?)\s+
-            ([EF])\/(.*?):\s+
+            ([EFA])\/(.*?):\s+
             (.*)
             $'
       captures:
@@ -137,10 +137,3 @@ repository:
         '6': {name: comment.logcat.type}
         '7': {name: entity.name.tag.logcat.tag}
         '8': {name: comment.logcat.msg}
-
-  error:
-    patterns:
-    - name: meta.logcat.line.other
-      match: '^.*$'
-      captures:
-        '0': {name: comment.logcat.msg}

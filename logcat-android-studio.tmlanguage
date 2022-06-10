@@ -95,26 +95,6 @@
 				</dict>
 			</array>
 		</dict>
-		<key>error</key>
-		<dict>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>captures</key>
-					<dict>
-						<key>0</key>
-						<dict>
-							<key>name</key>
-							<string>comment.logcat.msg</string>
-						</dict>
-					</dict>
-					<key>match</key>
-					<string>^.*$</string>
-					<key>name</key>
-					<string>meta.logcat.line.other</string>
-				</dict>
-			</array>
-		</dict>
 		<key>info</key>
 		<dict>
 			<key>patterns</key>
@@ -275,6 +255,61 @@
 					</dict>
 					<key>match</key>
 					<string>(?x)^ ([\d-]+)\s+([\d:.]+)\s+ (\d+)\-(\d+)\/ (.*?)\s+ ([W])\/(.*?):\s+ (.*) $</string>
+					<key>name</key>
+					<string>meta.logcat.line.warn</string>
+				</dict>
+			</array>
+		</dict>
+		<key>error</key>
+		<dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>string.logcat.timestamp.date</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>string.logcat.timestamp.time</string>
+						</dict>
+						<key>3</key>
+						<dict>
+							<key>name</key>
+							<string>constant.numeric.logcat.pid</string>
+						</dict>
+						<key>4</key>
+						<dict>
+							<key>name</key>
+							<string>constant.numeric.logcat.tid</string>
+						</dict>
+						<key>5</key>
+						<dict>
+							<key>name</key>
+							<string>entity.name.tag.logcat.tag</string>
+						</dict>
+						<key>6</key>
+						<dict>
+							<key>name</key>
+							<string>comment.logcat.type</string>
+						</dict>
+						<key>7</key>
+						<dict>
+							<key>name</key>
+							<string>entity.name.tag.logcat.tag</string>
+						</dict>
+						<key>8</key>
+						<dict>
+							<key>name</key>
+							<string>comment.logcat.msg</string>
+						</dict>
+					</dict>
+					<key>match</key>
+					<string>(?x)^ ([\d-]+)\s+([\d:.]+)\s+ (\d+)\-(\d+)\/ (.*?)\s+ ([EFA])\/(.*?):\s+ (.*) $</string>
 					<key>name</key>
 					<string>meta.logcat.line.warn</string>
 				</dict>
