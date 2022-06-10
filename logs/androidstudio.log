@@ -1,0 +1,7 @@
+2022-06-10 09:50:14.197 16322-16322/? V/XXXXLog: DownloadRate 104166 bytes per sec. Downloaded Bytes 5643/34714
+2022-06-10 09:50:14.239 16322-16322/? D/XXXXLog: HeapWorker thread shutting downn
+2022-06-10 09:50:14.153 16322-16322/? I/XXXXLog: Debugger is active
+2022-06-10 09:50:16.371 16322-16322/? W/XXXXLog: Launch timeout has expired, giving up wake lock!
+2022-06-10 09:50:14.273 16322-16322/? E/XXXXLog: Uncaught handler: thread main exiting due to uncaught exception
+2022-06-10 09:50:14.315 16322-16322/? F/XXXXLog: Uncaught handler: thread main exiting due to uncaught exception
+2022-06-10 09:50:14.315 16322-16322/? A/XXXXLog: Expected true but was false
